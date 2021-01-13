@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPIsTheBest", "CPPIsTheBest\CPPIsTheBest.vcxproj", "{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|ARM.Build.0 = Debug|ARM
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|x64.ActiveCfg = Debug|x64
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|x64.Build.0 = Debug|x64
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|x86.ActiveCfg = Debug|Win32
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Debug|x86.Build.0 = Debug|Win32
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|ARM.ActiveCfg = Release|ARM
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|ARM.Build.0 = Release|ARM
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|x64.ActiveCfg = Release|x64
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|x64.Build.0 = Release|x64
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|x86.ActiveCfg = Release|Win32
+		{770C03D2-A9DA-4617-9AAE-F9C80F8CC45A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12DC9913-4D65-4E77-AEC1-19CB6B53AD4E}
+	EndGlobalSection
+EndGlobal
