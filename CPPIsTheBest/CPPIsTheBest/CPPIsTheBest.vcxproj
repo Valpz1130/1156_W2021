@@ -200,7 +200,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="theActualNumberCode.cpp" />
     <ClCompile Include="theMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="numberFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

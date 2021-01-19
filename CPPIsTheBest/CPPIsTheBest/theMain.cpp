@@ -1,18 +1,29 @@
 #include <iostream>  // C++ IO
 
-// Standard Template Library STL
-// Everything starts with std:: ("scope" to a "namespace")
-// 
-// You are welcome to do this, if you'd like.
-// But I will not do this.
-//using namespace std;
-
+#include "numberFunctions.h"
+#include <string>
 
 int main()
 {
-	std::cout << "Hello World" << std::endl;
-	std::cout << "I'm sleepy" << std::endl;
+	const int SIZEOFARRAY = 5;
+	int x[SIZEOFARRAY] = { 1, 4, 27, 18, 78 };
 
+	std::cout << sizeof(int) << std::endl;
+	std::cout << sizeof(x) << std::endl;
+	std::cout << SIZEOFARRAY << std::endl;
+
+	// I "call" this function
+	int sum = getSum( x, SIZEOFARRAY);
+
+	std::cout << sum << std::endl;
+
+	std::string name = "Michael";	// "Michael\0"
+
+	for (unsigned int index = 0; index != name.size(); index++)
+	{
+		std::cout << index << " : " << name[index] << std::endl;
+	}
+		
 	return 0;
 }
 
