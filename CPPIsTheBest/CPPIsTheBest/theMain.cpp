@@ -11,6 +11,7 @@
 int main()
 {
 	std::cout << "Hello World" << std::endl;
+	std::cout << "Hazzah!" << std::endl;
 
 	return 0;
 }
