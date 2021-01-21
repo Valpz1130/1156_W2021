@@ -3,11 +3,10 @@
 
 #include <iostream>  // C++ IO
 #include <ctype.h>		// "C" library
-
 #include "numberFunctions.h"
-
 #include <string>
 #include "cNinja.h"
+#include "babyPicker.h"
 
 int aSharedVariable = 0;		// Before main in run
 
@@ -16,6 +15,15 @@ cNinja* g_pSharedNinja = NULL;
 
 int main()
 {
+	// Let's pretend there are no classes
+	// Function to load the data.
+	//	Where does the data go? (Array)
+	// Function to pick a random name.
+
+	// it's in the "BabyNames" folder under the "working director"
+	LoadFileData("BabyNames/yob1880.txt");
+
+
 	aSharedVariable = 5;
 
 	const int SIZEOFARRAY = 5;

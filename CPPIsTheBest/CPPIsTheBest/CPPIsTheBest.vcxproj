@@ -201,11 +201,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="babyNamePicker.cpp" />
     <ClCompile Include="cNinja.cpp" />
     <ClCompile Include="theActualNumberCode.cpp" />
     <ClCompile Include="theMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="babyPicker.h" />
     <ClInclude Include="cNinja.h" />
     <ClInclude Include="numberFunctions.h" />
   </ItemGroup>

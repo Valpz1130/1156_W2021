@@ -1,6 +1,8 @@
 #ifndef _numberFunctions_HG_
 #define _numberFunctions_HG_
 
+
+
 #include "cNinja.h"
 
 // Adds the numbers in the array and returns the sum
