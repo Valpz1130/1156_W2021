@@ -15,7 +15,6 @@ int main()
 	// I "call" this function
 	int sum = getSum( x, SIZEOFARRAY);
 
-	std::cout << sum << std::endl;
 
 	std::string name = "Michael";	// "Michael\0"
 
@@ -23,8 +22,7 @@ int main()
 	{
 		std::cout << index << " : " << name[index] << std::endl;
 	}
-		
+
+
 	return 0;
 }
-
-
