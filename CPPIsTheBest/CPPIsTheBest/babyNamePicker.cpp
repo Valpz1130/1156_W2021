@@ -27,6 +27,7 @@ bool LoadFileData(std::string filename)
 	// Mary,F,7065 
 	std::string curName;
 	// std::cin >> curName;
+
 	unsigned int indexName = 0;
 	while (babyNameFile >> curName)
 	{
@@ -39,11 +40,10 @@ bool LoadFileData(std::string filename)
 	// We could parse it, looking for the commas, and split it into separate arrays,
 	//	or whatever. 
 
-
 	unsigned int numberOfNames = indexName;
 	for (unsigned int index = 0; index != numberOfNames; index++)
 	{
-		std::cout << index << ":" << names[index];
+		std::cout << index << " : " << names[index] << std::endl;
 	}
 
 	return true;
