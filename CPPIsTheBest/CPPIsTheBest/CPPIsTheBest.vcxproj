@@ -175,6 +175,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -200,10 +201,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cNinja.cpp" />
     <ClCompile Include="theActualNumberCode.cpp" />
     <ClCompile Include="theMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cNinja.h" />
     <ClInclude Include="numberFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

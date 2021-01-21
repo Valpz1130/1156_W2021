@@ -21,8 +21,14 @@
     <ClCompile Include="theActualNumberCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cNinja.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cNinja.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="numberFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -25,12 +25,12 @@ int DoThis(int x, int y, long z)
 
 int main()
 {
-	float a = 0.0f; float b = 0.0f, float c = 0.0f;
-	int x1 = DoThis( (int)a, (int)b, (long)c );
+	//float a = 0.0f; float b = 0.0f, float c = 0.0f;
+	//int x1 = DoThis( (int)a, (int)b, (long)c );
 
-	int p = DoThis( 4, 2, 5 );
-		// Push: 4, 2, 5, return_address
-		// Jump (goto) to the location DoThis()
+	//int p = DoThis( 4, 2, 5 );
+	//	// Push: 4, 2, 5, return_address
+	//	// Jump (goto) to the location DoThis()
 
 	// Computer will guess a colour, then you try to guess it, too
 
