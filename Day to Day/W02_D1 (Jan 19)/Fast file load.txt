@@ -1,0 +1,17 @@
+Some students were asking about the fastest way to load a file.
+Here it is. 
+
+I would **NOT** suggest using this, but it's here if you want to know.
+(It loads the file as a giant array of bytes -char- that you then have 
+ to deal with. BUT the RAM/Memory is 1000-10,000 TIMES faster than your
+ hard drive, so there's that.)
+
+	// Scan to the end to get the size
+	theFile.seekg(0, std::ios::end);
+	std::ios::pos_type fileSize = theFile.tellg();
+	// Return to start
+	theFile.seekg(0, std::ios::beg);
+
+	char* pRawData = new char[static_cast<unsigned int>(fileSize)];
+	theFile.read(pRawData, fileSize);
+	theFile.close();

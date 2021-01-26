@@ -1,0 +1,116 @@
+INFO-1156 "Learning to love C/C++ before your spirit is broken"
+
+In today's episode, we'll  make a vanilla cake out of whatever we find lying around the house. For me, this will be drywall dust, cat food, and some old shoes. 
+
+Seriously, any questions? 
+
+
+String -> an array of characters
+
+8 bits  "machine unit" --> char (aka "byte")  6, 7, 8, 10, 12
+ (7 bits = each character)
+ 
+"string" = char[6]  fixed size
+"string" = char[?]  - Store a number to show big it is	
+					-"delimiter" '\0'
+
+"Michael"  -> "Michael\0"
+"Michael Feeney"  -> "Michael Feeney\0"
+
+{ 77, 69, ... }
+
+
+std::string name;		// How big (#bits/bytes) is a single char?
+
+bool bMyFlags;		
+
+char = unsigned short int		 8 bit int
+
+toupper()
+
+"M" = "M\0"   { 77, 0 }
+'M' = single character with just 'M' (or 77)
+
+	std::string colour[10] = "Red", "Green"...;
+	for (int i = 0; i < 10; i++)
+	{
+		// colour[i] = std::toupper( colour[i] );
+		for ( unsigned int index = 0; index != colour[i].size(); index++ )
+		{
+			colour[i][index] = toupper( colour[i][index] );
+		}
+	}
+
+
+	string x = std::string::upper( myName );
+
+	{ 
+		string x;					// stack
+		string* px = new string();	// heap
+	}
+	// Memory leak
+	
+
+
+	int num = rand() % (10);	// 0 to 9
+	
+	
+	
+	
+	
+Big "O"	-->   O(n)  10x size --> 10x longer
+
+unsigned int size = 100; 
+for ( int index = 0 ; index != size; index++ )
+{
+	// Do stuff
+	// Do other stuff
+	// And more stuff
+}
+	
+O(1)	 --> constant
+O(n^2)   --> 10x -> 100 
+		     100x -> 10,000
+			 
+Single threaded
+Memory access is zero second  --> THIS IS KILLER
+Limited by CPU performance	  --> effectively zero
+
+sqrt() -> 50-100 "cycles"
+			 
+			 
+qsort();
+std::sort()
+
+
+
+
+
+"Optimize... later" 
+
+x++ (1)  vs   ++x  (2)
+
+
+
+// 
+"auto"  -> for templates
+"help your poor hands from typing" --> oh, muffin
+
+
+for ( auto x = ...)
+
+"bro code" 
+
+What most expensive thing in programming?
+	maintenance
+	
+	1000 lines --> 50 lines
+
+			 
+			 
+	
+	
+	
+	
+	
+	
