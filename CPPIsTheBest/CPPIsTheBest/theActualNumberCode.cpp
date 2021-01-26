@@ -5,13 +5,13 @@
 #include "numberFunctions.h"
 #include "cNinja.h"
 
-extern cNinja* g_pSharedNinja;
+//extern cNinja* g_pSharedNinja;
 
 
 
 // Adds the numbers in the array and returns the sum
 // Note c & c++ are too stupid to know how big arrays are
-int getSum( int myNums[], int sizeOfArray)
+int getSum( int myNums[], int sizeOfArray )
 {
 	
 	std::cout << aSharedVariable << std::endl;

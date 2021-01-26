@@ -149,6 +149,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -205,6 +206,7 @@
     <ClCompile Include="cNinja.cpp" />
     <ClCompile Include="theActualNumberCode.cpp" />
     <ClCompile Include="theMain.cpp" />
+    <ClCompile Include="theOtherMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="babyPicker.h" />

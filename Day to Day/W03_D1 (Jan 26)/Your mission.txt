@@ -1,0 +1,14 @@
+Pick a randon name for my new baby!
+
+Complete the code (from Thursday) to pick a baby name
+
+Split it into separate files
+Share a bunch of variables (like the main array)
+BONUS: see if you can "parse out" the commas, etc.
+ANOTHER BONUS: see if you can add the gender:
+Pass "F" or "M" or "N" (non-binary)
+Pick a name, if it matches F/M, return it.
+If it doesn't match, just pick another, or scan until you find "F"/"M", or do it some other way!
+(Picking another takes almost no time and is REALLY simple)
+If it's "N", pick any name you'd like.
+This isn't going to be marked, but if you finish it, Lady Gaga will come to your street and sing!!! #truestory.

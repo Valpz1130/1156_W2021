@@ -1,0 +1,84 @@
+Hey everybody.
+
+
+Mary,F,7065  -> MyText
+- Store it as is, then process when needed
+- Spit the data up
+	- Separate arrays "name" "gender" "frequency"
+	- Array of struct/class
+	
+	
+find_first_of( MyText, ',' )
+
+"Mary,F,7065" 
+	"Mary"
+	"F"
+	"7065"
+	
+string names[1000];
+string genders[1000];
+unsigned int frequencies[1000];
+
+printArray( names, genders, frequencies );
+
+
+string myNumber = "7065";
+
+#include <sstream>		// stringstream
+
+std::stringstream ssNum;
+ssNum << myNumber;		// stream it INTO ssNum
+
+int myNum = 0;	
+ssNum >> myNum;			// stream it OUT 
+
+
+
+// 
+std::string [] getEntireArray(void)
+
+
+void getEntireArray( std::string &myArray[], int &sizeOfArray,
+					 int &shoeSize );
+
+class cMyInfo {
+	std::string myArray[];
+	int &sizeOfArray;
+	int shoeSize;	// NEW THING
+};
+
+
+sMyInfo getEntireArray( void );			
+bool getEntireArray( sMyInfo &MyInfo );
+
+string getEntireArray(void);
+
+
+int myArray[10];
+int* myArray;
+
+myArray is the memory location of myArray[0]	// 2,183,300
+
+myArray[99]		-->    *(myArray+99)
+
+"Michael"  
+	
+cPerson daPerson = myThing.GetUserByFirstName("Michael", "Feeney");
+
+cPerson daPerson;
+bool ItWorked = myThing.GetUserByFirstName("Michael", "Feeney", &daPerson );
+
+
+
+//
+int pixelColourA;
+
+GLint pxLoc = glGetUniformLocation(	7, "pixelColour" );
+if ( pxLoc != -1 )
+{	
+	// We're good to go
+
+
+
+
+

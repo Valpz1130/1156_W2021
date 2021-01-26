@@ -1,0 +1,26 @@
+What is a "built in" or "native" type (i.e. that corresponds to the hardware of the CPU)?
+
+
+What is the difference between an int and an unsigned int? 
+(i.e. why would you use one and not the other?)
+
+What kind of a warning could you get with this code?
+
+unsigned int a = 0;
+std::cint >> a;
+int b = a;	// WARNING HERE
+
+
+What kind of warning could you get with this code?
+
+float a;
+std::cin >> a;
+if ( a ) 		// WARNING HERE
+{
+	// etc.
+	
+	
+++x is faster than x++. (T/F)
+
+
+What does "auto" do (since C++11)?
