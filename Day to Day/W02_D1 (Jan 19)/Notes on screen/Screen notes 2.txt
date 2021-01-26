@@ -1,0 +1,75 @@
+C --> Unix
+C++ "C with classes"
+
+Linus Torvalds	-> his own unix 
+Linux git "get"
+
+std::endl;		"\n"
+
+https://github.com/LordMichaelmort/1156_W2021.git
+
+C --> C++ 
+C++ --> Java ("C++ without the pain")
+    
+	C++ (Sun sued them)
+	J++ (Sun sued them, again)
+	C#
+	
+	
+do, if, for, switch, while, etc. 	
+class (a little stranger in C++)
+
+C/C++
+* Strongly Typed Language	(compiler MUST know type)
+	int, unsigned int, long, unsigned long
+	unsigned long long   int64__
+	float, double, long double
+	
+	int x = 2;
+	float y = 2.000000f;
+	double z = 20000000000003;
+	
+	2^32 -> 4 billion   0 to 4 
+	        -2 billion to 2 billion
+	
+	unsigned int p = (unsigned int)x 
+	                 + (float)y + z;
+					 
+	p = static_cast<unsigned int>(x);
+
+	
+	string a = "2.3";
+	int b = static_cast<int>(a);
+
+	atoi()  atof()
+	a << b;
+
+	auto p = x + y + z;
+	
+	
+	for ( int x = 0.0; x != 10; ++x )
+	{
+		// Stuff in this loop
+		
+	}
+	//
+	
+	
+* Unmanaged
+	int x = 9;
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
