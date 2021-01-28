@@ -9,9 +9,19 @@
 //template <class T>
 //void dothis(cNinja x );
 
+#include "babyPicker.h"
+
+
 int main(int argc, char* argv[])
 //       int numberOfElementsInArray,   string CmdLineParamsArray[] 
 {
+	
+	// Various ways to parse the names
+	ParseALine1("Mary,F,7065");
+	ParseALine2("Mary,F,7065");
+
+
+
 	// Magic array ("smart" array)
 	// * Can grow in size as needed
 	// * Acts like an array []

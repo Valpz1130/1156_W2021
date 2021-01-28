@@ -11,7 +11,7 @@ extern int aSharedVariable;
 // "extern" means "external to this file"
 extern cNinja* g_pSharedNinja;
 
-extern int x;
+extern int x99;
 
 // Variables: 
 //	* only "extern"
@@ -21,6 +21,9 @@ extern int x;
 // Functions & classes:
 //  * Function: ONLY the signature
 //  * classes: (99.9%) DON'T include code unless it's trivial
+
+
+int getSum(int myNums[], int sizeOfArray);
 
 #endif 
 

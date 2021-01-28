@@ -2,12 +2,10 @@
 // Anything outside of a class, function (braces)
 
 #include <iostream>  // C++ IO
-<<<<<<< HEAD
 #include <string>	
 #include <vector>
 
 #pragma warning( disable : 4700)
-=======
 #include <ctype.h>		// "C" library
 #include "numberFunctions.h"
 #include <string>
@@ -19,8 +17,6 @@ int aSharedVariable = 0;		// Before main in run
 // This is REALLY where the ninja is
 cNinja* g_pSharedNinja = NULL;
 
->>>>>>> b9e17fff84ba253c991efc395401d7eca26d20c7
-
 int main2()
 {
 	// Let's pretend there are no classes
@@ -28,7 +24,6 @@ int main2()
 	//	Where does the data go? (Array)
 	// Function to pick a random name.
 
-<<<<<<< HEAD
 	int i1 = 0;
 	float f1 = 0.0f;
 	std::cout << i1 << "   " << f1 << std::endl;
@@ -101,9 +96,7 @@ int main2()
 	};
 	std::cout << "Thanks for playing" << std::endl;
 
-	return 0;
-}
-=======
+
 	// it's in the "BabyNames" folder under the "working director"
 	LoadFileData("BabyNames/yob1880.txt");
 
@@ -111,16 +104,15 @@ int main2()
 	aSharedVariable = 5;
 
 	const int SIZEOFARRAY = 5;
-	int x[SIZEOFARRAY] = { 1, 4, 27, 18, 78 };
+	int x45[SIZEOFARRAY] = { 1, 4, 27, 18, 78 };
 
 	std::cout << sizeof(int) << std::endl;
-	std::cout << sizeof(x) << std::endl;
+	std::cout << sizeof(x45) << std::endl;
 	std::cout << SIZEOFARRAY << std::endl;
->>>>>>> b9e17fff84ba253c991efc395401d7eca26d20c7
 
 
 	// I "call" this function
-	int sum = getSum( x, SIZEOFARRAY);
+	int sum = getSum( x45, SIZEOFARRAY);
 
 	// getSum() created the ninja...
 	::g_pSharedNinja->Attack();
@@ -229,11 +221,7 @@ int main2()
 
 //	std::cout << myPeoples << std::endl;
 
-	unsigned long long a = 0;  
-	std::cin >> a;
-	int b = a;	// WARNING HERE
 
-	std::cout << "b = " << b << std::endl;
 
 	return 0;
 }
