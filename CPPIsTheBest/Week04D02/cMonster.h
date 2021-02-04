@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 // #include <iostream>
+#include <vector>
 
 class cMonster		// Private by default
 {
@@ -15,9 +16,9 @@ public:
 	// Destructor
 	~cMonster();		// Only every 1 destructor
 
+	std::string firstname;
 	unsigned int age = 0;	// C++ 11 and later
 	float x, y;
-	std::string firstname;
 	// Only the "signature" is here (NO code)
 	void Roar(float x);			// Given to Sally to write
 	void SpawnBabies(void);		// Given to Greta to write
@@ -27,9 +28,7 @@ private:
 	std::string lastname;		// ADDED
 	int eyeGlassSize;
 
+	std::vector<std::string> m_FavoriteIceCreamFlavours;
 };
 
-class cWeapon
-{
-	void Road(void);
-};
+

@@ -30,6 +30,12 @@ cMonster UpdateMonsterAndClone(cMonster &a)
 
 int main(int argc, char* argv[])
 {
+	cMonster m1;
+	cMonster m2("Bob");
+	cMonster m3("Bob", 28 );
+
+
+
 	cMonster sally;	sally.firstname = "Sally";
 
 	// Can call with return or not
@@ -37,11 +43,6 @@ int main(int argc, char* argv[])
 	UpdateMonsterAndClone(sally);
 
 	std::vector<cMonster> vecMonster;	// 0 entries
-
-	x->Roar();	// Pointer to
-	x.Roar();	// The thing
-	
-	y.Roar();	// What the heck is this??
 
 	cMonster bob;	bob.firstname = "Bob";
 	// All STL containers is "copy in, copy out"
