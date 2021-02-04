@@ -144,6 +144,7 @@
     <ClInclude Include="cPersonGenerator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cMugBook.cpp" />
     <ClCompile Include="cPerson.cpp" />
     <ClCompile Include="cPersonGenerator.cpp" />
     <ClCompile Include="FeeneysTestingMain.cpp" />

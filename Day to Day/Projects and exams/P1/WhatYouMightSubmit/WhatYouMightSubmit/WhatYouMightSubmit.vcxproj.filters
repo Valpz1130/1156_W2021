@@ -35,5 +35,8 @@
     <ClCompile Include="FeeneysTestingMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cMugBook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

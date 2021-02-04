@@ -2,6 +2,9 @@
 #include <vector>
 #include "cMonster.h"
 
+bool ValidateMonster( cMonster theMonster );
+bool ProcessMonster( cMonster &theMonster );
+
 class cMonsterManager
 {
 public:
