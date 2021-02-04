@@ -1,8 +1,3 @@
-#ifndef _INFO1156_P1_API_HG_
-#define _INFO1156_P1_API_HG_
-
-#include "cPerson.h"
-
 class cMugBook
 {
 public:
@@ -18,10 +13,10 @@ public:
 	bool updateUserLastName( unsigned int SIN, std::string newLastName );
 	bool updateUserFirstName( unsigned int SIN, std::string newFirstName );
 	bool updateUserAddress( unsigned int SIN, int streetNumber, std::string streetName,
-						    std::string streetType, std::string streetDirection,
-						    std::string city, std::string province, 
-						    std::string postalCode /*NOTE: This is different*/);
-	bool updateUserGender( cPerson::eGenderType newGenderExpression );
+	                        std::string streetType, std::string streetDirection,
+	                        std::string city, std::string province, 
+	                        std::string postalCode /*NOTE: This is different*/);
+	bool updateUserGender( unsigned int SIN, cPerson::eGenderType newGenderExpression );
 
 	// Returns true if the person is found, false if not (then "theUser" is invlaid)
 	// Note tha the user is "returned" by reference.
@@ -29,8 +24,8 @@ public:
 
 	// Returns true if it's OK.
 	// Returns false if:
-	//	* user doesn't exit
-	//	* friend doesn't exit (or is invalid)
+	//	* user doesn't exist
+	//	* friend doesn't exist (or is invalid)
 	//	* user and friend are the same person
 	bool addFriend( unsigned int UserSIN, cPerson theFriend );
 	bool unFriend( unsigned int UserSIN, cPerson theFormerFriend );
@@ -40,6 +35,3 @@ public:
 	bool getFriendList( unsigned int UsersSIN, std::vector<cPerson> &vecFriendList );
 
 };
-
-#endif
-

@@ -1,0 +1,25 @@
+Page 4:
+addFriend() and unFriend()  : should be "exist" rather than "exit"
+
+
+INFO1156_P1_API.h should be cMugBook.h.
+
+	bool updateUserGender( unsigned int SIN, cPerson::eGenderType newGenderExpression );
+
+
+
+// You can include any other things you'd like
+#include <vector>
+#include "cPerson.h"
+
+
+
+Use the SIN as the "primary key"
+- Everything is associated with this
+
+
+There’s seven (7) parts (questions?) to this project, with the marks indicated. 
+
+
+You don't need to touch this or hand it in. 
+It's only used for generating the output file: INFO1156NameGenerator 
