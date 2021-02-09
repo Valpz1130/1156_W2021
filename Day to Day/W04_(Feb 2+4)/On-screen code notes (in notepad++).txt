@@ -1,0 +1,30 @@
+If you have any questions, please feel free to ask away!
+
+bool DoThesePeopleMatch( cPerson A, cPerson B )
+{	
+	// Code to compare - if at any point they DON'T, return false;
+}
+
+class cMugBook
+{
+public:
+	bool addFriend( unsigned int UserSIN, cPerson theFriend )
+		- Find the user (return false if you didn't)
+		- Check that the friend is in MugBook, too (false if you didn't)
+		- "add" a friend to that user
+
+private:
+	vector<cPerson> myPeople;			// Sally (SIN)    
+};
+
+// Store friend inside 
+class cPerson
+	vector<cPerson> myFriends;		// Sally   "duplicates"	
+	vector<cPerson*> myFriends;		// Sally   "duplicates"	
+	
+	vector<unsigned int> myFriendsSIN;
+	
+	
+CRC
+
+	
