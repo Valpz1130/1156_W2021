@@ -39,6 +39,11 @@ public:
 	// Only the "signature" is here (NO code)
 	void Roar(float x);			// Given to Sally to write
 	void SpawnBabies(void);		// Given to Greta to write
+
+	// The "Monster Identifier Number"
+	// (like the SIN, it's unique)
+	unsigned int MIN = 0;
+
 private:
 
 	int m_shoeSize;

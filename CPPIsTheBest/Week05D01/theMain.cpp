@@ -1,6 +1,7 @@
 #include "cMonster.h"
 #include <vector>
 #include <iostream>
+#include "cMonsterBook.h"
 
 void PrintMonName(cMonster theMonster)
 {
@@ -33,6 +34,9 @@ void PrintMonNameByRef(cMonster* pTheMonster)
 	std::cout << (*pTheMonster).firstname << std::endl;
 	return;
 }
+
+
+
 
 int main()
 {
@@ -89,6 +93,31 @@ int main()
 	// Because: What is px "pointing to now?" 
 	// (answer: likley nothing!!!)
 	std::cout << "X is at mem location: " << px << std::endl;		// "address of"
+
+
+	// Example of bool getUser( unsigned int SIN, cPerson &theUser );
+
+	cMonster m1;	m1.MIN = 1234; m1.firstname = "Bob";
+	cMonster m2;	m2.MIN = 1235; m2.firstname = "Sally";
+
+
+	// Add and find a person
+	cMonsterBook MB;
+	MB.addMonster(m1);
+	MB.addMonster(m2);
+
+	// Look for a monster... (from 2nd help session)
+	cMonster foundMonster;
+	unsigned int MIN = 1234;
+	if ( MB.getMonster(MIN, foundMonster) )
+	{
+		// found it!
+		std::cout << foundMonster.firstname << " " << foundMonster.MIN << std::endl;
+	}
+	else
+	{
+		std::cout << "Didn't find it" << std::endl;
+	}
 
 	return 0;
 }

@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cMonster.cpp" />
+    <ClCompile Include="cMonsterBook.cpp" />
     <ClCompile Include="theMain.cpp" />
     <ClCompile Include="theMain_PredFunctionReview.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cMonster.h" />
+    <ClInclude Include="cMonsterBook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
