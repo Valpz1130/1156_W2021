@@ -21,6 +21,9 @@
     <ClCompile Include="theMain_PredFunctionReview.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="theMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cMonster.h">

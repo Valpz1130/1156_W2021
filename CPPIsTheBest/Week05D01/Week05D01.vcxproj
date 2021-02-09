@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cMonster.cpp" />
+    <ClCompile Include="theMain.cpp" />
     <ClCompile Include="theMain_PredFunctionReview.cpp" />
   </ItemGroup>
   <ItemGroup>
