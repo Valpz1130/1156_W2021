@@ -3,24 +3,6 @@
 // #include <iostream>
 #include <vector>
 
-//namespace Pronvinces
-//{
-//	const unsigned int ONTARIO = 1;
-//	const unsigned int ALBERA = 2;
-//	// 
-//	const unsigned int PEI = 10;
-//};
-//const unsigned int ONTARIO = 1;
-//const unsigned int ALBERA = 2;
-//// 
-//const unsigned int PEI = 10;
-
-//// # (pre-compiler directives are alway find and replace)
-//#define ONTARIO 1
-//#define ALBERTA 2
-////
-//#define PEI 10
-
 enum  eProvinces		 // It's an int
 {
 	ONTARIO = 99,
@@ -29,13 +11,6 @@ enum  eProvinces		 // It's an int
 	BC				// Huh?
 	// and so on
 };
-enum  eFlavours		 // It's an int
-{
-	VANILLA,		// 0
-	CHOCOLATE,		// 1
-	STRAWBERRY
-};
-
 
 class cMonster		// Private by default
 {

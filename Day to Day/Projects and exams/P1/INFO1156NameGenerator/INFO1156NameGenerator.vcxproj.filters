@@ -24,7 +24,7 @@
     <ClCompile Include="fileLoadAndProcess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="INFO1156_P1_API\cPerson.cpp">
+    <ClCompile Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPerson.cpp">
       <Filter>INFO1156_P1_API</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,13 +32,13 @@
     <ClInclude Include="globalThings.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="INFO1156_P1_API\cPerson.h">
+    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cMugBook.h">
       <Filter>INFO1156_P1_API</Filter>
     </ClInclude>
-    <ClInclude Include="INFO1156_P1_API\INFO1156_P1_API.h">
+    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPerson.h">
       <Filter>INFO1156_P1_API</Filter>
     </ClInclude>
-    <ClInclude Include="INFO1156_P1_API\cPersonGenerator.h">
+    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPersonGenerator.h">
       <Filter>INFO1156_P1_API</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c680150c-30d4-4741-94ea-051b3f1dae93}</ProjectGuid>
-    <RootNamespace>INFO1156NameGenerator</RootNamespace>
+    <ProjectGuid>{cf9126c7-366c-4c36-9341-d85b79444c12}</ProjectGuid>
+    <RootNamespace>Week05D01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,15 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPerson.cpp" />
-    <ClCompile Include="fileLoadAndProcess.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="cMonster.cpp" />
+    <ClCompile Include="theMain_PredFunctionReview.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cMugBook.h" />
-    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPerson.h" />
-    <ClInclude Include="..\INFO1156_P1_API (i.e. the classes you have to implement)\cPersonGenerator.h" />
-    <ClInclude Include="globalThings.h" />
+    <ClInclude Include="cMonster.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

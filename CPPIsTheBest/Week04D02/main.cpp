@@ -49,6 +49,13 @@ int main()
 	cMonster m4("Ali", 1);
 									// .end()
 
+//	m1.provinceID = 4;	// WT?? 
+//	m1.provinceID = ONTARIO;	
+//	m1.provinceID = Pronvinces::ONTARIO;	
+	m1.provinceID = eProvinces::ALBERA;
+//	m1.provinceID = 1;
+//	m1.provinceID = eFlavours::CHOCOLATE;
+
 	cMonsterManager myMM;
 	myMM.addMonster(m1);
 	myMM.addMonster(m2);
