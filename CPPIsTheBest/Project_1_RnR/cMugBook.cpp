@@ -20,3 +20,29 @@ bool cMugBook::addFriend(unsigned int UserSIN, cPerson theFriend)
 
 
 }
+
+
+// Returns true if the person is found, false if not (then "theUser" is invalid)
+// Note that the user is "returned" by reference.
+bool cMugBook::getUser(unsigned int SIN, cPerson& theUser)
+{
+	// Search for this user by SIN
+
+	unsigned int sizeOfArray = this->vecTheUsers.size();
+
+	for (unsigned int index = 0; index != sizeOfArray; index++)
+	{
+		// Is this the person?
+		if (this->vecTheUsers[index].SIN == SIN)
+		{
+			// Yes, this is the user! 
+			// Copy the user...
+			theUser = this->vecTheUsers[index];
+			// 
+			return true;
+		}
+	}//for (unsigned int index
+
+	// If I'm here, I didn't find the user...
+	return false;
+}

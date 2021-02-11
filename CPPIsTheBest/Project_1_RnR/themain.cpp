@@ -14,7 +14,6 @@ void printUser(cPerson thePerson)
 	return;
 }
 
-
 //    _____ _   _ ___ ____   __        _____  _   _ _ _____    ____ ___  __  __ ____ ___ _     _____  
 //   |_   _| | | |_ _/ ___|  \ \      / / _ \| \ | ( )_   _|  / ___/ _ \|  \/  |  _ \_ _| |   | ____| 
 //     | | | |_| || |\___ \   \ \ /\ / / | | |  \| |/  | |   | |  | | | | |\/| | |_) | || |   |  _|   
@@ -37,29 +36,29 @@ int main()
 	cPerson Sally = myPG.pickAPerson();		// "Sally"
 	cPerson Ali = myPG.pickAPerson();		// "Ali"
 	cPerson Dev = myPG.pickAPerson();		// "Dev"
-	cPerson Michael = myPG.pickAPerson();		
+	cPerson Michael = myPG.pickAPerson();
 	// TODO: Print out a person
 
 	// if Person Generator is missing or broken, 
 	// then I'd just make people here 
-	cPerson Sally1;	Sally1.first = "Sally"; Sally1.last = "Jones";	
+	cPerson Sally1;	Sally1.first = "Sally"; Sally1.last = "Jones";
 	//... and so on
 
 	cMugBook MB;
 
-	MB.addUser( Sally );
-	MB.addUser( Ali );
-	MB.addUser( Dev );
+	MB.addUser(Sally);
+	MB.addUser(Ali);
+	MB.addUser(Dev);
 
 	// See if they were added
 	cPerson copyOfP1;
-	if (MB.getUser(Sally.SIN, copyOfP1))
+	if ( MB.getUser(Sally.SIN, copyOfP1) == true )
 	{
 		// Pretend there's a function that prints the user info
-		printUser( copyOfP1 );
+		printUser(copyOfP1);
 	}
 	else
-	{
+	{	// Returned false (i.e. didn't find that user)
 		std::cout << "Didn't find user p1" << std::endl;
 	}
 
@@ -77,8 +76,8 @@ int main()
 		// vecSallyFriendList has Dev and Ali
 		// Does it have 2 people
 		//if ( vecSallyFriendList.size == 2 )?
-		printUser( vecSallyFriendList[0] );
-		printUser( vecSallyFriendList[1] );
+		printUser(vecSallyFriendList[0]);
+		printUser(vecSallyFriendList[1]);
 	}
 
 	return 0;

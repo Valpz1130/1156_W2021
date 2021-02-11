@@ -53,9 +53,7 @@ public:
 	unsigned int SIN;	// = 0		
 	//unsigned int SIN = 0;		// C++ 11
 
-
-	// You have the friend list here
-	std::vector<cPerson> vecMyPals;
+	
 
 private:
 };
