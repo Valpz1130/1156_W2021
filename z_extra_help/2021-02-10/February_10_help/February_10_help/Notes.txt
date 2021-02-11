@@ -1,0 +1,18 @@
+Ted, M, 18183
+string x = "Mary, F, 27827"
+
+array myTokens = x.tokenize(",");
+
+myTokens[0] = "Mary"
+
+Code is more imp than data
+
+
+string theString = "Mary, F, 27827\0"
+int x = 1;
+
+theString = theString + ", Bob";
+
+
+
+getline(x, ",")
