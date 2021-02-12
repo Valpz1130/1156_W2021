@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9127d3ff-c905-43a9-8db0-7f9afba5c839}</ProjectGuid>
-    <RootNamespace>Project1RnR</RootNamespace>
+    <ProjectGuid>{46b12f9b-7daa-4b71-864b-9369c5ca4330}</ProjectGuid>
+    <RootNamespace>P1PGenAndSmallTester</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,15 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cMugBook.cpp" />
-    <ClCompile Include="cPerson.cpp" />
-    <ClCompile Include="cPersonGenerator.cpp" />
-    <ClCompile Include="themain.cpp" />
+    <ClInclude Include="FilesProvidedToYou\cMugBook.h" />
+    <ClInclude Include="FilesProvidedToYou\cPerson.h" />
+    <ClInclude Include="FilesProvidedToYou\cPersonGenerator.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cMugBook.h" />
-    <ClInclude Include="cPerson.h" />
-    <ClInclude Include="cPersonGenerator.h" />
+    <ClCompile Include="FilesProvidedToYou\cPerson.cpp" />
+    <ClCompile Include="FilesProvidedToYou\cPersonGenerator.cpp" />
+    <ClCompile Include="theMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

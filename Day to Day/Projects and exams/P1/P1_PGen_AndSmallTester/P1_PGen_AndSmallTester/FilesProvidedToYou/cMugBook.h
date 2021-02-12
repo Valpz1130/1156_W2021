@@ -1,14 +1,3 @@
-//#pragma once
-#ifndef _cMugBook_HG_
-#define _cMugBook_HG_
-
-#include <string>
-#include <vector>
-#include "cPerson.h"
-
-
-
-
 class cMugBook
 {
 public:
@@ -29,8 +18,8 @@ public:
 	                        std::string postalCode /*NOTE: This is different*/);
 	bool updateUserGender( unsigned int SIN, cPerson::eGenderType newGenderExpression );
 
-	// Returns true if the person is found, false if not (then "theUser" is invalid)
-	// Note that the user is "returned" by reference.
+	// Returns true if the person is found, false if not (then "theUser" is invlaid)
+	// Note tha the user is "returned" by reference.
 	bool getUser( unsigned int SIN, cPerson &theUser );
 
 	// Returns true if it's OK.
@@ -45,16 +34,4 @@ public:
 	// vecFreindList can be zero (which is sad, but valid)
 	bool getFriendList( unsigned int UsersSIN, std::vector<cPerson> &vecFriendList );
 
-
-	// Add whatever you'd like...
-	std::vector<cPerson> vecTheUsers;
-
-	// Helpful methods I added to make my life easier...
-	std::string stringToUpperCase(std::string theString);
-	std::string stringToLowerCase(std::string theString);
-	// Now for something actually usefull... 
-	std::string string1stLetUpper(std::string theString);
 };
-
-
-#endif   //_cMugBook_HG_

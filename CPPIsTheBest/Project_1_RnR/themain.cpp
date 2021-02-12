@@ -14,18 +14,74 @@ void printUser(cPerson thePerson)
 	return;
 }
 
-//    _____ _   _ ___ ____   __        _____  _   _ _ _____    ____ ___  __  __ ____ ___ _     _____  
-//   |_   _| | | |_ _/ ___|  \ \      / / _ \| \ | ( )_   _|  / ___/ _ \|  \/  |  _ \_ _| |   | ____| 
-//     | | | |_| || |\___ \   \ \ /\ / / | | |  \| |/  | |   | |  | | | | |\/| | |_) | || |   |  _|   
-//     | | |  _  || | ___) |   \ V  V /| |_| | |\  |   | |   | |__| |_| | |  | |  __/| || |___| |___  
-//     |_| |_| |_|___|____/     \_/\_/  \___/|_| \_|   |_|    \____\___/|_|  |_|_|  |___|_____|_____| 
-//                                                                                                    
-// There's a bunch of methods that aren't implemented, so 
-//	you'll get a bunch of linker errors here. 
-//
+// Takes a string, then returns it all in upper case 
+// (if it's ASCII, ignores anything else)
+// So "ontario" would be "ONTARIO"
+std::string stringToUpperCase(std::string theString)
+{
+	for (int index = 0; index != theString.size(); index++)
+	{
+		theString[index] = toupper(theString[index]);
+	}
+	return theString;
+}
+std::string stringToLowerCase(std::string theString)
+{
+	for (int index = 0; index != theString.size(); index++)
+	{
+		theString[index] = tolower(theString[index]);
+	}
+	return theString;
+}
+
+// Take "ontario" or "ONTARIO" or "OnTaRIO"
+// --> "Ontario"
+std::string string1stLetUpper(std::string theString)
+{
+	for (int index = 0; index != theString.size(); index++)
+	{
+		// Is this the 1st character? 
+		// ('cause it should be upper case, yo)
+		if (index == 0)
+		{	// Make it upper case
+			theString[index] = toupper(theString[index]);
+		}
+		else
+		{	// it's NOT the 1st character, so lower case
+			theString[index] = tolower(theString[index]);
+		}
+	}
+	return theString;
+}
+// Riggs, Zuni, LIPPERT, M, 545374661, 31, SEARS, CIR, , T2C 7V3, Gatineau, Newfoundland and Labrador, 
+void tokenizeStringWithComma(std::string lineOfText)
+{
+	std::string token = "";
+	for (int index = 0; index != lineOfText.size(); index++)
+	{
+		if (lineOfText[index] == ',')
+		{
+			std::cout << token << std::endl;
+			token = "";
+		}
+		else // it's NOT a comma
+		{
+			token += lineOfText[index];
+		}
+	}
+	return;
+}
 
 int main()
 {
+	// Create a mug book
+	cMugBook MB;
+
+
+	std::string text = stringToUpperCase("ontario");
+	std::string text1 = MB.stringToUpperCase("alberta");
+	std::string a1 = MB.string1stLetUpper("alberTA");
+
 	cPersonGenerator myPG;
 	if (!myPG.loadPeople("MyExcitingPersonFile.txt"))
 	{
@@ -41,10 +97,15 @@ int main()
 
 	// if Person Generator is missing or broken, 
 	// then I'd just make people here 
-	cPerson Sally1;	Sally1.first = "Sally"; Sally1.last = "Jones";
+	cPerson Sally1;	
+	Sally1.first = "Sally"; 
+	Sally1.last = "Jones";
+	Sally1.middle = "Mary";
+	Sally1.streetName = "Richmond";
+	Sally1.streetType = "Street";
+	Sally1.streetDirection = "North";	
 	//... and so on
 
-	cMugBook MB;
 
 	MB.addUser(Sally);
 	MB.addUser(Ali);

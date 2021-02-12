@@ -9,36 +9,33 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Person Generator">
-      <UniqueIdentifier>{f2cf9972-06f6-46ab-8d36-4f54ff4a3efe}</UniqueIdentifier>
+    <Filter Include="cMugBook">
+      <UniqueIdentifier>{96748b35-0e4f-4511-8ba8-623053687f78}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mug Book">
-      <UniqueIdentifier>{0809bbc8-15a0-495d-b785-1a7d2250883a}</UniqueIdentifier>
+    <Filter Include="PersonGenerator">
+      <UniqueIdentifier>{c56f0bfe-965d-4d65-bc87-e1999afb966b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="themain.cpp">
+    <ClCompile Include="myMainFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cPerson.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cPersonGenerator.cpp">
-      <Filter>Person Generator</Filter>
+      <Filter>cMugBook</Filter>
     </ClCompile>
     <ClCompile Include="cMugBook.cpp">
-      <Filter>Mug Book</Filter>
+      <Filter>cMugBook</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cMugBook.h">
+      <Filter>cMugBook</Filter>
+    </ClInclude>
     <ClInclude Include="cPerson.h">
-      <Filter>Header Files</Filter>
+      <Filter>cMugBook</Filter>
     </ClInclude>
     <ClInclude Include="cPersonGenerator.h">
-      <Filter>Person Generator</Filter>
-    </ClInclude>
-    <ClInclude Include="cMugBook.h">
-      <Filter>Mug Book</Filter>
+      <Filter>PersonGenerator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
