@@ -34,5 +34,8 @@
     <ClCompile Include="FilesProvidedToYou\cPersonGenerator.cpp">
       <Filter>ProvidedFiles</Filter>
     </ClCompile>
+    <ClCompile Include="cMugBook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

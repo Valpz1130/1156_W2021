@@ -1,3 +1,9 @@
+#ifndef _cMugBook_HG_
+#define _cMugBook_HG_
+
+#include "cPerson.h"
+#include <vector>
+
 class cMugBook
 {
 public:
@@ -19,7 +25,7 @@ public:
 	bool updateUserGender( unsigned int SIN, cPerson::eGenderType newGenderExpression );
 
 	// Returns true if the person is found, false if not (then "theUser" is invlaid)
-	// Note tha the user is "returned" by reference.
+	// Note that the user is "returned" by reference.
 	bool getUser( unsigned int SIN, cPerson &theUser );
 
 	// Returns true if it's OK.
@@ -35,3 +41,5 @@ public:
 	bool getFriendList( unsigned int UsersSIN, std::vector<cPerson> &vecFriendList );
 
 };
+
+#endif 
