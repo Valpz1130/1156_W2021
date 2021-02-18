@@ -56,39 +56,39 @@ bool getData2( std::vector<std::string> &myVector )
 
 // This is a java/C# sort of thing
 // const & passing -> fast passing by it changes a COPY
-// Returns the copy (by reference)
-std::vector<std::string>& getData2(const std::vector<std::string>& myVector)
-{
-	std::vector<std::string> myCopy = myVector;
-
-	for (unsigned int x = 0; x != myVector.size(); x++)
-	{
-		myCopy[x] = myCopy[x] + " is a goof!";
-	}
-	return myCopy;
-}// <-- everything in this scope is gone!	
+//// Returns the copy (by reference)
+//std::vector<std::string>& getData2(const std::vector<std::string>& myVector)
+//{
+//	std::vector<std::string> myCopy = myVector;
+//
+//	for (unsigned int x = 0; x != myVector.size(); x++)
+//	{
+//		myCopy[x] = myCopy[x] + " is a goof!";
+//	}
+//	return myCopy;
+//}// <-- everything in this scope is gone!	
 
 
 // Pass by value
 // Return by re
-int& OhNoDontDoThis(void)
-{
-	int p = 1;		// <--- reference to this guy, that's on the stack
-	return p;
-}
+//int& OhNoDontDoThis(void)
+//{
+//	int p = 1;		// <--- reference to this guy, that's on the stack
+//	return p;
+//}
 
 // "NEVER" return by refenece... 
 // Only every PASS by reference (if the function.method is going to change the thing)
-int& OhNoDontDoThis(void)
-{
-	int p = 0;
-	return p;
-}
+//int& OhNoDontDoThis(void)
+//{
+//	int p = 0;
+//	return p;
+//}
 int main()
 {
 	// NO NO NO NO NO !!!!!!!
-	int& o = OhNoDontDoThis();
-	std::cout << o << std::endl;		// CRASH-O-RAMA!!!
+//	int& o = OhNoDontDoThis();
+//	std::cout << o << std::endl;		// CRASH-O-RAMA!!!
 
 	return 0;
 

@@ -1,8 +1,8 @@
 #include "cMonster.h"
+#include <iostream>
 
 void cMonster::SpawnBabies(void)		// Given to Greta to write
 {
-	// Code that Great is writing.
-
-	//...
+	std::cout << "A monster had some babies! Congratulations!!" << std::endl;
+	return;
 }
