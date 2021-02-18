@@ -1,0 +1,55 @@
+ 
+class cMonster {
+	void setName( string newName )
+	{
+		string name = newName;
+		this->name = "Ted";		
+	}
+private:
+	string name;
+};
+
+4 + ((3 * 4) / 2)
+
+int main()
+{
+	string name = "Robert";	<- just a variable
+	cMonster Bob;			<- Bob.name
+	cMonster Sally;			
+	Bob.setName( name );
+	
+}
+
+
+
+cPerson 
+{
+	vector<unsigned int> vecMyFriendSIN;
+}
+
+cPerson Robin;  Robin.SIN = 87662;
+Robin.vecMyFriendSIN.push_back(1233445);
+
+vector<cPerson> vecRobinsFriends;
+bool mugBook.GetFriendList( 87662, vecRobinsFriends )
+{
+	// Search for Robin (87662), else return FALSE
+	for ( index.... vecMyFriendSIN )
+	{ 
+		cPerson temp;
+		this->getUser( vecMyFriendSIN[index], temp );
+		vecRobinsFriends.push_back(temp);
+	}
+	return true;
+}
+
+
+
+
+
+
+
+
+
+	
+	
