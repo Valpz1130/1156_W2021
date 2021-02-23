@@ -1,0 +1,29 @@
+Now it's free form help session, so ask away! 
+
+// vector<cPerson> myPeople;
+
+bool cMugBook::addUser( cPerson thePerson )
+{
+	// You have to check:
+	// - if this person is already there
+	// - if the data is valid (aren't missing anything)
+	// If anything is wrong, return false;
+
+	this->myPeople.push_back( thePerson );
+
+	return true;
+}
+
+
+cMugBook myMB;
+cPerson fred;	// add fred's information
+fred.SIN = 123456789;	// Invalid; 9 digits, etc.
+
+if ( myMB.addUser( fred ) )
+{
+	cout << "Added"
+}
+else
+{
+	cout << "Didn't add user" 
+}

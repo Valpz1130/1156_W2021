@@ -1,0 +1,33 @@
+cout 
+ofstream errorOut("MyErrors.txt");
+
+errorOut << "OH NO!";
+
+stream
+
+cerr
+
+
+char Michael = "Mike"  // 5 
+strlen( Michael )
+
+string.lengh()
+
+
+int main( int argc, char* argv[] )
+int main( int argc, char** argv )
+
+int main( int argc, string argv[] )
+
+char name[] = "Michael";		strlen(name)
+char* name = "Michael";			strlen(name)
+string name = "Michael";
+
+
+string x = vecStrings[11];
+
+
+
+
+
+

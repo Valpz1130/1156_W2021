@@ -1,0 +1,32 @@
+Pointers are specified with a "*"
+
+
+int x;
+int* px;		// Pointer to an int
+
+You set them by getting the "address of" or &
+
+px = &x;		// Set px to the "address of" x
+
+To "get at" what it's pointing to, use the "*" (looks like the end of an arrow)
+
+cout << px;			// Prints ACTUAL MEMORY LOCATION (useless)
+cout << *px;		// The thing it's pointing to
+
+Use pointer for heap variables 
+
+cMonster* pTheMon = new cMonster();		// Points to a monster
+
+Can still "dereference", but not usually this
+
+cout << (*pTheMon).FirstName;	// Odd, but valid
+cout << pTheMon->FirstName;		// Better and WAY more useful
+
+When you are done, call "delete" on the variables. 
+
+
+
+
+
+
+

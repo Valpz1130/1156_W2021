@@ -1,0 +1,239 @@
+Welcome to the zoom help.
+
+Let me know if you have any questions.
+
+
+void DoThis( int x );	// Pass the VALUE of x on the stack
+void DoThis( int &x );	// Passes a pointer to the caller's "int"
+
+// Pass by ref in "C"
+void DoThis( int* pX )
+{	// 
+	*pX = 29;
+}
+
+int x = 9;		// 29
+cout << &x;
+DoThis(&x);
+
+
+
+int x = 17;		292830298302
+int* px = NULL;	// 0 or nullptr
+
+px = &x;		// 292830298302
+
+cout << *px
+
+
+int* px = new int;		// int x = ???
+*px = 17;
+cout << *px;
+
+"pure C"
+void CreateMonster(cMonster** ppM)			//int &x
+{
+	*ppM = new cMonster();		// 22832983
+	(*ppM)->Name = "Josh";
+	
+	int x = 0;
+	int* px = &x;
+	int* ppx = &px;
+	int* pppx = &ppx;
+	
+	**(x)** = 8;
+}
+
+int main()
+{
+	cMonster* pM = 0;			// Memory location 0
+	CreateMonster(&pM);
+	cout << pM->FirstName;		// 22832983
+	
+	
+int main( int argc, char** argv )	
+
+
+int doThis();
+
+int main()
+{
+	int x();		// 282392	
+
+	int* px = new int();
+
+	
+	return 0;
+}
+	
+	
+
+{
+  cMonster myMonsters[100];			// 1283838  0
+									// 1283938  1 (100 bytes)
+									// 1284038
+									// ...
+									
+  cMonster m1;		// 12000
+  cMonster m2;		// 12100
+  cMonster m3;		// 12200
+  ..
+  cMonster m10;
+  
+  cMonster* pM1 = &m1;
+  *(pM1+100) 
+  
+  
+									
+									
+  int p = 0;
+									
+  cout << sizeof(cMonster);
+
+  cout << sizeof(myMonsters) / sizeof(cMonster);
+}
+
+cout << sizeof(myMonsters) / sizeof(cMonster);;
+
+
+cout << myMonsters[0].firstname 
+cout << myMonsters->firstname;
+
+cout << (*myMonsters).firstname;
+cout << myMonsters[0].firstname 
+
+cout << (*(myMonsters + 99)).firstname;
+cout << myMonsters[99].firstname 
+
+cout << (*(myMonsters + 2)).firstname;
+
+
+int x;					// 4 bytes
+cout << sizeof(x);
+cout << sizeof(int);
+
+
+unsigned int phoneNumber = 0005195554568;
+
+string phoneNumber;	????   "519-222
+
+char phone qNumber[10] = { '5','1', '9', ...)
+
+cMonster myMonsters[10];
+cout << myMonsters;
+
+cout << phoneNumber;
+
+519 123 4567
+
+unsigned int SIN = 928382982;
+
+bool IsTrue = true;
+cout << sizeof(bool); ???
+
+
+
+int x;
+cMonster* pMonster;
+// In a function/class
+cout << pMonster->firstName;
+
+cPerson personA;  // RAII??? 
+cout << personA.SIN;
+
+int x = 19;
+cMonster* pMonster = new cMonster();
+
+
+int* px = new int[100];					400
+
+
+int* px = malloc( 100 * sizeof(int) );	400
+free(px);
+
+++x   x++
+
+INC
+
+
+FeeneyNew()
+
+
+std::vector<cMonster, new> 
+
+cPerson bob;		
+cout << bob.firstName;
+
+cPerson* pBob = NULL;			0
+pBob = new cPerson();			192838
+
+cout << pBob->firstname;	// CRASH!!
+
+
+
+
+
+cPerson bob;
+vector<cPerson> vecBob;
+// C++ copy in, copy out
+vecBob.push_back(bob);
+bob.firstname = "Sally";
+
+C#
+cPerson bob;
+vector<cPerson> vecBob;
+vecBob.push_back(bob);
+bob.firstname = "Sally";
+
+
+cPerson* pBob = new cPerson();			// 23823932
+pBob->firstName = "Bob";
+
+vector< cPerson* > vecPeople;
+vecPeople.push_back( pBob );		myPeople[0] = 23823932
+pBob->firstName = "Sally";
+
+
+
+// Create a class for a chess board
+
+class cPieces {
+	string type;	// "Queen", "Rook", whatever
+	string colour;	// black or white
+	int file_vertical;		// 0 to 7
+	int rank_horizontal;	// 0 to 7
+};
+	
+	
+class cChessBoard
+{...
+	cChessBoard();
+	vector< cPieces* > vec_pPeices_myBoard;
+//	void SaveState( std::string filename );
+//	void LoadState( std::string fileName );
+	void MovePiece( std::string piece, std::string colour,
+					int startFile, int startRank
+	                int endFile, int endRank );
+};
+
+class cPlayer {
+	void SetBoard( cChessBoard* pTheBoard )
+	void MakeMove( std::string piece, std::string colour,
+					int startFile, int startRank
+	                int endFile, int endRank );
+	cChessBoard* pTheBoard;
+}
+
+cChessBoard* pTheBoard = new cChessBoard();
+// When and who is creating these pieces?? 
+//... Add 
+cPlayer* pWomanFromQueensGambit = new cPlayer();
+pWomanFromQueensGambit->SetBoard( pTheBoard );
+
+cPlayer* pRussianGuy = new cPlayer();
+pRussianGuy->SetBoard( pTheBoard );
+
+
+
+
+
