@@ -3,7 +3,7 @@
 
 struct sDateYMD
 {
-	sDateYMD(): year(0), month(0), day(0) {};
+	sDateYMD() : year(0), month(0), day(0) {};
 	unsigned int year;
 	unsigned int month;
 	unsigned int day;

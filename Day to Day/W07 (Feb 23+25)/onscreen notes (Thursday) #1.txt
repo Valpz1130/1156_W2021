@@ -1,0 +1,296 @@
+enum eGenderType
+{
+	MALE = 0,		
+	FEMALE,		
+	NON_BINARY,
+	RATHER_NOT_SAY_UNKNOWN
+};
+
+
+class cThing
+{
+	int age;
+	inline int getAge()
+	{
+		return age;
+	}
+	inline void setAge(int newAge)
+	{
+		age = newAge;
+	}
+};
+
+cThing bob;
+bob.setAge(5);
+cout << bob.getAge();
+
+
+inline std::string getGenderAsString(eGenderType gender)
+{
+	arrayOfResults[4] = { "male", "female"...
+	return arrayOfResults[gender]
+	
+	switch (gender) 
+	{	
+	case MALE:
+		return "male";
+		break;
+	case FEMALE:
+		return "female";
+		break;
+	case NON_BINARY:
+		return "non-binary";
+		break;
+	case RATHER_NOT_SAY_UNKNOWN:
+		return "rather not say or unknown";
+		break;
+	}
+	return "OH NO, CALL TECH SUPPORT!"
+}
+
+int main()
+{
+	// 
+	if ( all is lost) 
+	{
+		exit(FAILURE);	// SERIOUS ISSUE!!!!
+	}
+		
+	exit(SUCCESS);
+	return 0;
+}
+
+bool cPerson::isValid(void)
+{
+	// One entry, one exit
+	bool bItsAllGood = true; 
+	
+	if ( ! IsFNValid(this->firstName) ) { bItsAllGood = false; }
+	if ( ! IsLNValid(this->lastname) ) { bItsAllGood = false; }
+	if ( this->age < 18 ) { bItsAllGood = false; }
+	if ( this->age > 100 ) { bItsAllGood = false; }
+	
+	
+	// If we made it through, then we're good!
+	return bItsAllGood;
+}
+
+bool cPerson::isValid(void)
+{
+	// "early exit" (has more than one exit location)
+	// Check for the 1st NON valid thing
+	if ( ! IsFNValid(this->firstName) ) { return false; }
+	if ( ! IsLNValid(this->lastname) ) { return false; }
+	if ( this->age < 18 ) { return false; }
+	if ( this->age > 100 ) { return false; }
+	
+	// If we made it through, then we're good!
+	return true;
+}
+	
+	
+	
+
+// CAN ONLY be integers (not float or string or anything else)
+std::string getAgeRange(int age)
+{
+	switch (age)
+	{
+		case age < 10:			// SORRY, NOT ALLOWED IN C/C++
+			return "child";
+			break;
+		case age < 25:
+			return "young adult";
+			
+
+// CAN ONLY be integers (not float or string or anything else)
+std::string getGenderAsString(eGenderType gender)
+{
+	std::string returnValue = "";
+	switch (gender) 
+	{	
+	case MALE:
+		returnValue = "male";
+		break;
+	case FEMALE:
+		returnValue = "female";
+		break;
+	case NON_BINARY:
+		returnValue = "non-binary";
+		break;
+	case NON_BINARY:
+		returnValue = "rather not say or unknown";
+		break;
+	default:	// WTH?
+		break;
+	}
+	
+	return returnValue;
+}
+	
+	
+std::string getGenderAsString(eGenderType gender)
+{
+	switch (gender) 
+	{	
+	case MALE:
+		return "male";
+		break;
+	case FEMALE:
+		return "female";
+		break;
+	case NON_BINARY:
+		return "non-binary";
+		break;
+	default:
+		return "rather not say or unknown";
+		break;
+	}
+	// In reality I can never get here...
+	return "OH NO, CALL TECH SUPPORT!"
+}
+	
+	
+	
+	
+	
+	// It's not "MALE" at this point
+	if ( gen == FEMALE )
+	{
+		return "female";
+	}
+	if ( gen == NON_BINARY )
+	{
+		return "non-binary";
+	}
+	return "RATHER_NOT_SAY_UNKNOWN";
+
+std::string getGenderAsString(eGenderType gen)
+{
+	if ( gen == MALE ) 
+	{	
+		return "male"; 
+	}
+	else if ( gen == FEMALE )
+	{
+		return "female";
+	}
+	//.. and so on
+	
+	
+std::string getGenderAsString(eGenderType gen)
+{
+	if ( gen == MALE ) 			{ return "male"; }
+	if ( gen == FEMALE )		{ return "female"; }
+	if ( gen == NON_BINARY )	{ return "non-binary"; }
+	}
+	return "RATHER_NOT_SAY_UNKNOWN";
+	// It's gotta be RATHER_NOT_SAY_UNKNOWN
+	// (or we have a very serious problem...)
+	
+	
+std::string getGenderAsString(eGenderType gen)
+{
+	if ( gen == MALE ) 
+	{	
+		return "male"; 
+	}
+	// It's not "MALE" at this point
+	if ( gen == FEMALE )
+	{
+		return "female";
+	}
+	if ( gen == NON_BINARY )
+	{
+		return "non-binary";
+	}
+	return "RATHER_NOT_SAY_UNKNOWN";
+	// It's gotta be RATHER_NOT_SAY_UNKNOWN
+	// (or we have a very serious problem...)
+	
+	
+	
+	
+unsigned char phoneNumber[13];	
+'5','1','9' --> 53, 49, 59
+
+4, 7, 1, 5, 0, 9, 5, 5, 5, 1, 2, 1, 2
+(471) 519-555-1212
+0, 3, 9, 5, 0, 9, 5, 5, 5, 1, 2, 1, 2
+(39) 519-555-1212
+
+areacode = phoneNumber[3] to phoneNumber[5]
+
+
+
+
+
+
+
+cMugBook myMB;
+cPerson bob;
+bob.firstname = "bob";
+bob.age = 50;
+//
+myMB.addUser(bob);
+
+vector 
+cMonster* pArray = new cMonster[100];
+
+
+cMugBook myMB;
+cPerson* pBob = NULL;				int x = 0;
+pBob = new cPerson();				x = 19;
+pBob->firstname = "bob";
+pBob->age = 50;
+//
+myMB.addUser(pBob);				// m_vecUsers.push_back(pBob)
+
+pBob->firstname = "Sally";
+
+cPerson* pFoundPerson = myMB.getUser( pBob->SIN );
+
+pFoundPerson = new cPerson();
+
+delete pFoundPerson;
+
+Responsible? 
+
+
+class cMSP
+{
+public:
+	cMSP(cMonster* pTheMonster)	 {
+		this->pTheActaulThing = pTheMonster;
+		this->count++:	
+	}
+	cMonster* getObject();
+	void Release()
+	{
+		this->count--;
+		if ( this->count == 0 )
+		{
+			delete pTheActaulThing;
+		}
+	}
+private:
+	cMonster* pTheActaulThing = NULL;
+	unsigned int count = 0;
+}
+
+cMSP spMonster( new cMonster() );
+spMonster.Release();
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,24 @@
+cPerson Sally;
+
+
+Sally.loadState( "sallysinfo.txt" )
+{
+
+}
+
+
+
+"sallysinfo.txt" contains
+Mattalyn
+Elroi
+SIMONE
+F
+264588541
+999
+MCRAE
+RAMP
+<NO_DIRECTION>
+E5B
+1W0
+Barrie
+Ontario
