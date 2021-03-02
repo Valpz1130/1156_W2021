@@ -1,0 +1,36 @@
+There's no lecture, but I'm around from 12-2 if there's questions, etc. 
+
+Sorry for the delay, but the marks are *almost* done for project 1 (posting this afternoon).
+
+
+Some things to focus on for the mid-term:
+- Work on your projects (#1 if you didn't get it working, or #2)
+
+(I'll send a more comprehensive list, too)
+* Basic types ("strongly typed"), so casting, etc.
+* How strings are stored (trailing \0)
+* "C-style" arrays (so this: int myArray[10], cMonster myArray[100], etc.)
+* vectors, loading, using, etc.
+* Loading things into array and vectors
+* Finding things in arrays and vectors
+* "deleting" things from arrays/vectors
+    - You can use erase() on a vector, but it's really a
+	  "shift everything to overwrite the values"
+	  (The point is that the index values won't stay the same *after* 
+	   the deleted thing)
+* functions & methods:
+	* Passing by value and by reference
+* Using basic classes (think cPerson, cMonster, etc.)
+  - This is mostly "here's a class", so use it, and you /might/ 
+    have to add something to it. 
+* Header (.h) and implementation (.cpp) files:
+  - class definitions in header
+  - "code" into the cpp files (with the "::" scope for the class)
+  - Header guards 
+* Using strings + things that "look like strings"
+  - Think the "postal code" in the cPerson
+* File and other stream input (cin, fstream, stringstream, etc.)
+* Using an enum
+
+* There will be a bonus about pointers, but that will be a "final exam" topic
+* Iterators, algorithm library, and predicate functions/functors are NOT on the mid-term, either
